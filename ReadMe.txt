@@ -1,5 +1,5 @@
 This experimental research data-set was used to present the multi-label 
-classification results of UWB ranging system in our journal article entitled 
+classification results of UWB ranging system in our research article entitled 
 “Identification of NLOS and Multi-path Conditions in UWB Localization using 
 Machine Learning Methods”. The research data includes the extracted features 
 of UWB experimental data including their respective labels and the corresponding
