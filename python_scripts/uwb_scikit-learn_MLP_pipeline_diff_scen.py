@@ -138,14 +138,13 @@ np.savetxt("MLP_pred_true_10iter_%s.txt" %time.strftime("%d%m%Y_%H%M%S"), MLP_pr
 
 # save the predict-true pair for the real test dataset at different scenarios
 MLP_pred_true_10iter_test_diffScen = np.array(pred_10iter_test_diffScen).T
-np.savetxt("MLP_pred_true_2iter_testDiffScen_%s.txt" %time.strftime("%d%m%Y_%H%M%S"), MLP_pred_true_10iter_test_diffScen,
-           delimiter=',', header="Prediction_01, Prediction_02,  True_Test", comments="")
+np.savetxt("MLP_pred_true_10iter_testDiffScen_%s.txt" %time.strftime("%d%m%Y_%H%M%S"), MLP_pred_true_10iter_test_diffScen,
+           delimiter=',', header="Prediction[0:9],  True_Test", comments="")
 
 # Print some overall results
 print("\nTotal Data Size, Training size, Test Size:")
 print(np.shape(X)), print(np.shape(X_train)), print(np.shape(X_test))
 
-# print(np.shape(acc_RF))
 print("\nmean accuracy in MLP: %0.4f +/- %f" % (np.mean(acc_MLP), np.std(acc_MLP)))
 print("\nmean accuracy in MLP at diff scenario: %0.4f +/- %f" % (np.mean(acc_MLP_test_diffScen), np.std(acc_MLP_test_diffScen)))
 MLP_acc_tr_tes = np.column_stack((acc_MLP, trTime_MLP, tesTime_MLP))       # combine numpy vectors as a column stack
