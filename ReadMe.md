@@ -1,7 +1,7 @@
 This experimental research data-set was used to present the multi-label 
 classification results of UWB ranging system in our research article entitled 
-“**Identification of NLOS and Multi-path Conditions in UWB Localization using 
-Machine Learning Methods**”. The research data includes the extracted features 
+[“**Identification of NLOS and Multi-path Conditions in UWB Localization using 
+Machine Learning Methods**”](https://www.mdpi.com/2076-3417/10/11/3980). The research data includes the extracted features 
 of UWB experimental data including their respective labels and the corresponding
 source code for the python machine learning library scikit-learn. The article 
 was published in the special issue entitled “Recent Advances in Indoor 
